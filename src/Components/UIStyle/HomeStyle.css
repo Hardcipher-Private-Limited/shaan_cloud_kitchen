@@ -1,0 +1,91 @@
+.headerOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:120px;
+
+}
+.headImg{
+  width: 80%;
+  object-fit: cover;
+}
+
+.headerOne h1{
+    font-style: oblique;
+    font-size:70px;
+    font-weight:bolder;
+    color: rgb(248, 142, 76);
+}
+.headerOne button{
+    padding: 20px 60px 20px 60px;
+    background-color: rgb(248, 142, 76) ;
+    border: none;
+    color: white;
+}
+.menuStart{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuss{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 60px;
+}
+.menuUnderLine{
+    text-decoration:overline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .maping {
+    width: calc(33.33% - 20px);
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .maping {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .maping {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .TESTIMONIALSStart{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ratings{
+    color: lightgray
+
+  }
+  .names{
+    color: rgb(248, 142, 76);
+    font-weight: bold;
+    font-style: italic;
+  }
+.three-dotsss{
+  display: flex;
+  justify-content: flex-end;
+}
+  .three-dot{
+    width: 20px;
+    height: 20px;
+  }

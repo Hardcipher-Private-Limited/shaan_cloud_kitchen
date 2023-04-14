@@ -1,0 +1,75 @@
+.navBarLast{
+    padding-left: 10px;
+    margin-right: 20px;
+    color: rgb(248, 142, 76);
+
+}
+.fontWight{
+    font-weight: 800;
+    font-size: x-large;
+    color: rgb(248, 142, 76);
+}
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav-open {
+    width: 250px;
+  }
+  
+  .sidenav button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+  }
+  
+  .sidenav li {
+    margin: 10px 0;
+  }
+  
+  .sidenav a {
+    display: block;
+    color: rgb(248, 142, 76);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: rgb(248, 142, 76);
+  }
+
+  .cancel-btn{
+    background-color: white;
+    border: none;
+    border-radius: none;
+
+  }
+
+  .open-btn{
+    background-color: white;
+    border: none;
+    border-radius: none;
+  }
+.header{
+    margin-left: 60px;
+    display: flex;
+}
+.menuBarhead{
+    padding-right: 20px;
+}

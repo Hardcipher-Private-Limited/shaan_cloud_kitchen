@@ -35,15 +35,27 @@
     }
 .Footer{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    width: 100%;
   
 }
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+.Footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+}
+    
+
 .Contact{
     width: calc(33.33% - 20px);
-    margin-right: 0px;
+
+    /* margin-right: 0px;
     margin-bottom: 20px;
     padding-left: 80px;
-    margin-left: 20px;
+    margin-left: 20px; */
     
 }
 .Contact p{

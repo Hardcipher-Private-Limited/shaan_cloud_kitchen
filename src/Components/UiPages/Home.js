@@ -24,9 +24,15 @@ const Home = () => {
     <>
       <div>
         <NavBar />
+        {/* <div>
+          <img src="../Images/download.png" />
+        </div> */}
       </div>
       <div>
-        <div className="headerOne">
+        <div
+          className="headerOne"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           <h1>
             <span>Shaan Cloud Kitchen</span>
           </h1>
@@ -34,7 +40,15 @@ const Home = () => {
           <p>Open today until 7:30 PM</p>
           <button onClick={handleWhatsapp}>WHATSAPP 089513 70587</button>
         </div>
-        <div className="pt-5 d-flex  justify-content-center">
+        <div
+          className="pt-5 "
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            alignItems: "center",
+          }}
+        >
           <img
             src="https://media.discordapp.net/attachments/1095304486882385984/1096323205788078080/bANNER.png?width=1179&height=663"
             alt=""
@@ -47,7 +61,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">CHATS</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {Data?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -63,7 +80,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">PARATHAS</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {ParathasData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -81,7 +101,10 @@ const Home = () => {
             SUPER SNACKS & SWEETS(Available only on Order)
           </h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {SNACKSData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -96,7 +119,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">Lunch Box</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {LunchBox?.map((item, index) => {
             let { name, price, extra } = item;
             return (
@@ -111,7 +137,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">COMBOS</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {COMBOSData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -125,7 +154,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">RICE ITEMS</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {RICEITEMSData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -139,7 +171,10 @@ const Home = () => {
         <div>
           <h4 className="menuss">VEG DRY</h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {VEGDRYData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -155,7 +190,10 @@ const Home = () => {
             VEG CURRY
           </h4>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
           {VEGCURRYData?.map((item, index) => {
             let { name, price, time } = item;
             return (
@@ -169,7 +207,14 @@ const Home = () => {
         <div className="TESTIMONIALSStart">
           <h5 className="menuUnderLine">TESTIMONIALS</h5>
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           {TESTIMONIALSData?.map((item, index) => {
             let { name, info, rating } = item;
             return (

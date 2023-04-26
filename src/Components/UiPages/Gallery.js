@@ -36,7 +36,11 @@ const Gallery = () => {
       <div className="menuss" id="gallery">
         <h5>GALLERY</h5>
       </div>
-      <div className="imgesHead" id="gallery">
+      <div
+        className="imgesHead"
+        id="gallery"
+        style={{ display: "flex", flexWrap: "wrap" }}
+      >
         <div>
           <img
             src="https://media.discordapp.net/attachments/1095304486882385984/1096323205519638589/banner_2.png?width=622&height=624"
@@ -64,8 +68,8 @@ const Gallery = () => {
           onClick={handlemap}
         />
       </div>
-      <footer className="pt-5 pb-5">
-        <div className="Footer">
+      <footer className="pt-5 pb-5 container">
+        <div className="Footer ">
           <div className="Contact conctectinfo">
             <h3> Address</h3>
             <button>CALL NOW</button>
@@ -78,7 +82,16 @@ const Gallery = () => {
           </div>
           <div className="Contact">
             <h3>Business Hours</h3>
-            <table>
+            <div>
+              <p>Mon: 10:30 AM - 7:30 PM </p>
+              <p>Tue: 10:30 AM - 7:30 PM</p>
+              <p> Wed: 10:30 AM - 7:30 PM </p>
+              <p>Thu: 10:30 AM - 7:30 PM </p>
+              <p>Fri: 10:30 AM - 7:30 PM</p>
+              <p> Sat: 10:30 AM - 7:30 PM</p>
+              <p>Sun: 10:30 AM - 7:30 PM</p>
+            </div>
+            {/* <table>
               <tr>
                 <td>Mon :</td>
                 <td>10:30 AM - 7:30 PM</td>
@@ -107,7 +120,7 @@ const Gallery = () => {
                 <td>Sun:</td>
                 <td>10:30 AM - 7:30 PM</td>
               </tr>
-            </table>
+            </table> */}
           </div>
         </div>
       </footer>

@@ -63,7 +63,7 @@ const NavBar = () => {
               </div>
               <li class="nav-item fontWight ">Shaan Cloud Kitchen</li>
             </ul>
-            <div className="d-flex justify-content-between ">
+            <div className="d-flex justify-content-between">
               <form class="d-flex navBarLast">
                 <div class="" type="submit" onClick={handleWhatsApp}>
                   <img src="./Images/chat.png" alt="" className="p-2" />

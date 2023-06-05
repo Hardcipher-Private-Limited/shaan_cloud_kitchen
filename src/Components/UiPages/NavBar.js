@@ -13,17 +13,25 @@ const NavBar = () => {
   };
 
   function handleButtonClick() {
-    window.location.href =
+    var link = document.createElement("a");
+    link.href =
       "https://www.google.com/maps/dir//Shreeji+Cloud+Kitchen/@13.0628051,77.4480994,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae23e7a9bfc86b:0x39374a9528744374!2m2!1d77.5181399!2d13.0628145";
+    link.target = "_blank";
+    link.click();
   }
 
   function handleWhatsApp() {
-    window.location.href =
-      "https://api.whatsapp.com/send?phone=918951370587&text=";
+    var link = document.createElement("a");
+    link.href = "https://api.whatsapp.com/send?phone=918951370587&text=";
+    link.target = "_blank";
+    link.click();
   }
 
   function handleCall() {
-    window.location.href = "tel:+91-89513-70587";
+    var link = document.createElement("a");
+    link.href = "tel:+91-89513-70587";
+    link.target = "_blank";
+    link.click();
   }
   return (
     <>

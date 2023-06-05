@@ -3,29 +3,47 @@ import "../UIStyle/Gallery.css";
 
 const Gallery = () => {
   function handleButtonClick() {
-    window.location.href =
-      "https://www.google.com/maps/dir//Shreeji+Cloud+Kitchen/@13.0628051,77.4480994,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae23e7a9bfc86b:0x39374a9528744374!2m2!1d77.5181399!2d13.0628145";
+    var link = document.createElement("a");
+    link.href =
+      "https://www.google.com/maps/dir//Shreeji+Cloud+Kitchen/@13.0628051,77.4480994,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae23e7a9bfc86b:0x39374a9528744374!2m2!1d77.5181399!2d13.0628145?entry=ttu";
+    link.target = "_blank";
+    link.click();
   }
   function handleWrite() {
-    window.location.href =
+    var link = document.createElement("a");
+    link.href =
       "https://www.google.com/search?hl=en-IN&gl=in&q=Shreeji+Cloud+Kitchen,+Mata+Kripa+Building,+near+Axis+Bank+ATM,+Brindavan+Layout,+Shetty+Halli,+Jalahalli+West,+Bengaluru,+Karnataka+560015&ludocid=4122845988370269044&lsig=AB86z5UtcF64uheKCoNBoPv0QBV5";
+    link.target = "_blank";
+    link.click();
   }
 
   function handleRead() {
-    window.location.href =
+    var link = document.createElement("a");
+    link.href =
       "https://www.google.com/search?hl=en-IN&gl=in&q=Shreeji+Cloud+Kitchen,+Mata+Kripa+Building,+near+Axis+Bank+ATM,+Brindavan+Layout,+Shetty+Halli,+Jalahalli+West,+Bengaluru,+Karnataka+560015&ludocid=4122845988370269044&lsig=AB86z5UtcF64uheKCoNBoPv0QBV5#lrd=0x3bae23e7a9bfc86b:0x39374a9528744374,1";
+    link.target = "_blank";
+    link.click();
   }
   function handlemap() {
-    window.location.href =
+    var link = document.createElement("a");
+    link.href =
       "https://www.google.com/maps/place/Shreeji+Cloud+Kitchen/@13.0628145,77.5181399,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae23e7a9bfc86b:0x39374a9528744374!8m2!3d13.0628145!4d77.5181399!16s%2Fg%2F11rsr0d8q3";
+    link.target = "_blank";
+    link.click();
   }
 
   function handleGoogleBussines() {
-    window.location.href = "https://www.google.com/business/";
+    var link = document.createElement("a");
+    link.href = "https://www.google.com/business/";
+    link.target = "_blank";
+    link.click();
   }
 
   function handleReport() {
-    window.location.href = "https://support.google.com/business/answer/7388122";
+    var link = document.createElement("a");
+    link.href = "https://support.google.com/business/answer/7388122";
+    link.target = "_blank";
+    link.click();
   }
   return (
     <>
@@ -74,6 +92,7 @@ const Gallery = () => {
             <h3> Address</h3>
             <button>CALL NOW</button>
             <p> 089513 70587</p>
+            <p> info@shaancloudkitchen.com</p>
           </div>
           <div className="Contact conctectinfo">
             <h3>Contact</h3>
